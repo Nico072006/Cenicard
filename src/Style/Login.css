@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+}
+.
+.Titulo{
+    justify-content: center;
+    align-items: center;
+    color: red;
+    margin-left: 45%;
+    margin-bottom: 25px;
+    flex-direction: column;
+}
+.formu{
+    margin-bottom:20px;
+    display: flex;
+    flex-direction: column;
+
+
+}
