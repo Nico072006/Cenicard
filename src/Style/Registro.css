@@ -4,7 +4,7 @@ body{
     padding: 0%;
 }
 
-.Contenedor_Login{
+.Contenedor_Registro{
     background-image: url(../Img/Fondo.jpg);
     background-size: cover;
     background-position: center;
@@ -16,7 +16,7 @@ body{
     margin: 0 ;
     padding: 0;
 }
-.Tarjeta_login{
+.Tarjeta_Registro{
     font-family: "Raleway", sans-serif;
     display: flex;
     width: 1100px;
@@ -24,9 +24,9 @@ body{
     border-radius: 40px;
     overflow: hidden;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15) ;
-    background-color: #f5ecd9;
+    background-color:#05924e;
 }
-.Info_login{
+.Info_Registro{
     flex: 1.2;
     padding: 40px 50px 0 50px;
     display: flex;
@@ -36,30 +36,30 @@ body{
     justify-content: space-between;
     position: relative;
 }
-.Titulo{
+.Titulo_Registro{
     font-family: "Raleway", sans-serif;
-    color:rgb(30, 167, 30) ;
+    color: #fdf3dd ;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
-.Imagen{
+.Imagen_Registro{
     width: 100%;
     max-width: 650px;
     object-fit: contain;
     align-items: flex-end;
 }
-.imagen {
+.imagen_Registro{
     width: 100%;
     max-width: 600px; 
     display: block;
     object-fit: contain;
     margin-bottom: -5px; 
 }
-.Formu{
+.Formu_Registro{
     font-family: "Raleway", sans-serif;
     flex: 1;
-    background-color: #05924e;
-    color: white;
+    background-color: #fdf3dd;
+    color: #05924e;
     display: flex;
     padding: 60px 40px;
     flex-direction: column;
@@ -67,32 +67,34 @@ body{
     border-bottom-left-radius: 200px; 
     border-top-left-radius: 0;
 }
-.Titulo_Login{
+.Titulo_Registro_Formu{
     font-size: 2rem;
     margin-bottom: 50px;
     text-align: center;
+    color: #05924e;
 }
-.Formu_Info{
+.Formu_Info_Registro{
     margin-bottom: 8px;
     display: flex;
     flex-direction: column;
 }
-.Formu_Info label{
+.Formu_Info_Registro label{
     margin-bottom: 8px;
     font-weight: 500;
+    color: #05924e;
 }
-.Formu_Info input{
+.Formu_Info_Registro input{
     padding: 15px;
     border-radius: 25px;
     border: none;
     background-color:rgba(255, 255, 255, 0.2) ;
-    color: white;
+    color:  #05924e;
     outline: none;
 }
-.Formu_Info input::placeholder {
+.Formu_Info_Registro input::placeholder {
     color: rgba(255, 255, 255, 0.6);
 }
-.btn_Ingresar{
+.btn_Ingresar_Registro{
     margin-top: 30px;
     margin-left: 30px;
     width: 80%;
@@ -108,10 +110,9 @@ body{
 
     
 }
-
-.Enlace{
+.Enlace_Registro{
     text-decoration: underline;
-    color: white;
+    color: #05924e;
     text-align: center;
     margin-top: 20px;
 }
