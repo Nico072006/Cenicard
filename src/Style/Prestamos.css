@@ -1,0 +1,129 @@
+.Contenedor_Prestamos {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 20px;
+  padding: 40px;
+  min-height: 100vh;
+  align-items: center;
+  background-image: url('../Img/Fondo.jpg');
+  background-size: cover;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* Sidebar especial con botones en grid */
+.Botones_Perfil_Grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.btn_Claro_Small, .Badge_Notificaciones_Small {
+  background-color: #fdf3dd;
+  border: 1px solid #333;
+  padding: 8px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.Badge_Notificaciones_Small {
+  background-color: #05924e;
+  color: white;
+  border: none;
+}
+
+/* Panel Central */
+.Panel_Prestamos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fdf3dd;
+  border-radius: 40px;
+  height: 85vh;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* --- Pendientes (Lado Crema) --- */
+.Seccion_Pendientes {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn_atras_verde {
+  align-self: flex-start;
+  background-color: #05924e;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.Caja_Pendientes {
+  width: 90%;
+  margin-top: 20px;
+}
+
+.Caja_Pendientes h3, .Titulo_Historial {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Item_Pendiente {
+  background-color: #fce8ad; /* Amarillo crema de la imagen */
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: bold;
+  color: #8a7a4a;
+}
+
+/* --- Historial (Lado Verde) --- */
+.Seccion_Historial {
+  background-color: #05924e;
+  padding: 40px;
+  border-radius: 80px 0 0 40px;
+  color: white;
+}
+
+.Subseccion_Historial {
+  margin-bottom: 30px;
+}
+
+.Subseccion_Historial h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.Item_Historial {
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.Item_Historial.entregado {
+  background-color: #58d68d; /* Verde claro */
+  color: #145a32;
+}
+
+.Item_Historial.no_entregado {
+  background-color: #cd6155; /* Rojo/Salmon */
+  color: white;
+}
+
+/* Responsivo */
+@media (max-width: 1100px) {
+  .Panel_Prestamos { grid-template-columns: 1fr; height: auto; }
+  .Seccion_Historial { border-radius: 40px 40px 0 0; }
+}

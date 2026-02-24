@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+.Contenedor_carnet {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 20px;
+  padding: 40px;
+  min-height: 90vh;
+  align-items: center;
+  background-image: url('../Img/Fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.Panel_Carnets {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  background-color: #fdf3dd;
+  border-radius: 35px;
+  height: 80vh;
+  min-height: 520px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.Seccion_Solicitudes {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn_atras {
+  background-color: #05924e;
+  color: white;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.Titulo_Seccion {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Lista_Solicitudes h3 {
+  text-align: center;
+  color: #05924e;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+.Item_Solicitud {
+  background-color:  #ffffff;
+  padding: 15px 15px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.Acciones_Solicitud {
+  display: flex;
+  gap: 2px;
+}
+
+.btn_accion {
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.btn_aceptar { 
+  background-color: #05924e; 
+}
+.btn_eliminar { 
+  background-color: #d9534f; 
+}
+
+.Seccion_Usuarios {
+  background-color: #05924e;
+  color: white;
+  padding: 40px;
+  border-radius: 45px 0 0 45px; 
+}
+
+.Header_Usuarios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.Buscador_Container input {
+  padding: 8px 100px;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  background-color: white;
+}
+
+.btn_Agregar {
+  background-color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.Grid_Usuarios {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 25px;
+}
+
+.Card_User {
+  background-color:  #fdf3dd;
+  padding: 15px;
+  border-radius: 10px;
+  color: #000000;
+  text-align: center;
+}
+
+.User_Avatar {
+  width: 90px;
+  height: 100px;
+  border: 2px solid #000000;
+  margin: 0 auto 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.User_Avatar img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.Tag.Aprendiz { 
+  color: #05924e; 
+  font-weight: bold; 
+}
+
+@media (max-width: 1100px) {
+  .Contenedor_carnet { grid-template-columns: 1fr; }
+  .Panel_Carnets { grid-template-columns: 1fr; height: auto; }
+  .Seccion_Usuarios { border-radius: 40px 40px 0 0; }
+}
+
+@media (max-width: 600px) {
+  .Item_Solicitud { flex-direction: column; gap: 10px; }
+  .Grid_Usuarios { grid-template-columns: 1fr 1fr; }
+}

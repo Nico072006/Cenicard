@@ -1,0 +1,148 @@
+/* Reutilizamos la base responsiva de Carnets */
+.Contenedor_Renta {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 20px;
+  padding: 40px;
+  min-height: 100vh;
+  align-items: center;
+  background-image: url('../Img/Fondo.jpg');
+  background-size: cover;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.Panel_Renta {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  background-color: #fdf3dd;
+  border-radius: 40px;
+  height: 85vh;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* --- Categorías --- */
+.Seccion_Categorias {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Contenedor_Categorias {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.Contenedor_Categorias h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.btn_categoria {
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid #333;
+  background: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.btn_categoria.activo {
+  background-color: #05924e;
+  color: white;
+  border: none;
+}
+
+/* --- Material (Verde) --- */
+.Seccion_Material {
+  background-color: #05924e;
+  padding: 40px;
+  border-radius: 80px 0 0 40px;
+  color: white;
+}
+
+.Header_Material {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.Acciones_Header {
+  display: flex;
+  gap: 10px;
+}
+
+.select_tipo {
+  padding: 8px 15px;
+  border-radius: 15px;
+  border: 1px solid #333;
+  background: white;
+  font-weight: bold;
+}
+
+.btn_Agregar_Material {
+  background: white;
+  border: 1px solid #333;
+  padding: 8px 15px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* --- Grid de Laptops --- */
+.Grid_Material {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.Card_Material {
+  background: white;
+  border-radius: 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  color: #333;
+}
+
+.Icono_Laptop {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.ID_Material {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #777;
+}
+
+/* --- Badges de Estado --- */
+.Badge_Estado {
+  position: absolute;
+  top: 10px;
+  right: -5px;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: white;
+}
+
+.Badge_Estado.verde { background-color: #28a745; }
+.Badge_Estado.naranja { background-color: #fd7e14; }
+.Badge_Estado.rojo { background-color: #dc3545; }
+
+/* Responsivo */
+@media (max-width: 1000px) {
+  .Panel_Renta { grid-template-columns: 1fr; height: auto; }
+  .Seccion_Material { border-radius: 40px 40px 0 0; }
+}

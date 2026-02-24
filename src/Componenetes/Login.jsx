@@ -1,10 +1,14 @@
 import "../Style/Login.css"
 import PersonaCenicard from "../Img/PersonaCenicard.png"
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Formulario enviado");
+    navigate("/Principal");
   };
 
   return (
